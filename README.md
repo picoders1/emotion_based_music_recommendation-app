@@ -56,8 +56,4 @@ streamlit run app.py
 4. Music Recommendation: Based on the predicted emotion, the application suggests music by generating a YouTube search query.
 
 
-
-
-
-
-
+## Thank You!!
