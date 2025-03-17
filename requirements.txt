@@ -1,0 +1,7 @@
+streamlit
+streamlit-webrtc
+av
+numpy
+mediapipe==0.10.5
+protobuf==3.20.3
+keras

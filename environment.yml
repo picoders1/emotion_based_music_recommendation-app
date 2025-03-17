@@ -1,0 +1,7 @@
+name: env_music_reccom
+dependencies:
+  - python>=3.5
+  - anaconda
+  - pip
+  - pip:
+    - -r requirements.txt
