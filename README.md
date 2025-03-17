@@ -10,15 +10,14 @@ This project is an Emotion-Based Music Recommender system that uses facial and h
 
 ## Installation
 
-1. Clone the repository**:
+1. Clone the repository:
 
 ```bash
-   git clone https://github.com/Gayathri-Selvaganapathi/emotion_based_music_recommendation.git
-   cd emotion_based_music_recommendation
+   git clone https://github.com/picoders1/emotion_based_music_recommendation-app.git
 ```
 2. Install the necessary dependencies:
 
-Ensure you have Python 3.7+ installed, then run:
+Ensure you have Python 3.8+ installed, then run:
 
 ```bash
 pip install -r requirements.txt
