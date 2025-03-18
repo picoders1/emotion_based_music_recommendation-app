@@ -1,8 +1,9 @@
 streamlit
-streamlit-webrtc==0.51.2
+streamlit-webrtc==0.48.2
 av
 numpy
-mediapipe==0.10.21
-protobuf>=4.25.3  
+tensorflow>=2.9.0
+mediapipe==0.10.11
+protobuf<4
 keras
 opencv-python-headless
