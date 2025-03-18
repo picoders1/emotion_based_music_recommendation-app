@@ -7,6 +7,19 @@ import mediapipe as mp
 from keras.models import load_model
 import webbrowser
 
+col1, col2, col3 = st.columns([1,6,1])
+with col1:
+    st.write("")
+
+with col2:
+    st.image(".\images\logo.png" , width=530, use_column_width=True)
+
+with col3:
+    st.write("")
+
+st.title("MyMusic")
+st.write('MyMusic is emotion detection based music reccommendation system. To get reccommended songs, start by allowing mic and camera for this web app.')
+
 model = load_model("model.h5")
 label = np.load("labels.npy")
 holistic = mp.solutions.holistic
@@ -80,10 +93,13 @@ class EmotionProcessor:
 
         return av.VideoFrame.from_ndarray(frm, format="bgr24")
 
+lang = st.text_input("Enter your preferred language")
+artist = st.text_input("Enter your preferred artist")
+
 if st.session_state["run"] != "false":
     webrtc_streamer(key="key", desired_playing_state=True,
                     video_processor_factory=EmotionProcessor)
-
+    
 btn = st.button("Recommend me songs")
 
 if btn:
@@ -94,3 +110,12 @@ if btn:
         webbrowser.open(f"https://www.youtube.com/results?search_query={emotion}+song")
         np.save("emotion.npy", np.array([""]))
         st.session_state["run"] = "false"
+
+
+st.write('Made by PI')
+
+#Streamlit Customisation
+st.markdown(""" <style>
+header {visibility: hidden;}
+footer {visibility: hidden;}
+</style> """, unsafe_allow_html=True)
