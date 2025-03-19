@@ -20,7 +20,7 @@ This project is an Emotion-Based Music Recommender system that uses facial and h
 Ensure you have Python 3.8+ installed, then run:
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 3. Prepare the model and label files:
