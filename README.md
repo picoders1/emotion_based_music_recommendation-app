@@ -4,7 +4,7 @@ This project is an Emotion-Based Music Recommender system that uses facial and h
 
 ## Features
 
-- **Real-time Emotion Detection**: Utilizes Mediapipe's holistic model to detect facial and hand landmarks in real-time.
+- **Real-time Emotion Detection**: Utilizes Mediapipe's holistic model to detect facial and hand landmarks in real time.
 - **Emotion Classification**: A pre-trained Keras model (`model.h5`) classifies the detected landmarks into a specific emotion.
 - **Music Recommendation**: Based on the detected emotion, the application suggests music by searching on YouTube.
 
@@ -37,7 +37,7 @@ streamlit run app.py
 
 2. Interact with the application:
 
-    * The application will start the webcam and detect your emotion in real-time.
+    * The application will start the webcam and detect your emotions in real-time.
     * Once the emotion is detected, you can click the "Recommend me songs" button to open YouTube with a search query based on your emotion.
     * The application will search YouTube for songs that match your detected emotion.
 
@@ -56,4 +56,4 @@ streamlit run app.py
 4. Music Recommendation: Based on the predicted emotion, the application suggests music by generating a YouTube search query.
 
 
-## Thank You!!
+## Thank You !!
