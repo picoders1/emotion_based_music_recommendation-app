@@ -37,7 +37,7 @@ streamlit run app.py
 
 2. Interact with the application:
 
-    * The application will start the webcam and detect your emotions in real-time.
+    * The application will start the webcam and detect your emotions in real time.
     * Once the emotion is detected, you can click the "Recommend me songs" button to open YouTube with a search query based on your emotion.
     * The application will search YouTube for songs that match your detected emotion.
 
